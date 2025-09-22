@@ -1,9 +1,10 @@
 def gitDownload(repo)
 {
- git "https://github.com/ganeshgoud43/${repo}.git"   
+    git "https://github.com/ganeshgoud43/${repo}.git"
 }
 
-def Build()
+def buildArtifact()
 {
-  sh 'mvn package'
+     sh 'mvn package'
+
 }
